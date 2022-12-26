@@ -1,0 +1,249 @@
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    border-bottom: 2px solid #fefefe
+}
+
+.row a,
+.row h1 {
+    font-weight: 500
+}
+
+*,
+.navbar a.logo-brand,
+.navbar ul li a,
+.row a,
+a,
+footer>p {
+    text-decoration: none
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #fefefe;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #000
+}
+
+h1 {
+    font-family: Lora
+}
+
+a,
+p {
+    font-family: Montserrat
+}
+
+.navbar {
+    display: flex;
+    padding: 46px 77px;
+    justify-content: space-between
+}
+
+.navbar a.logo-brand {
+    font-family: 'Crimson Pro';
+    font-size: 14px;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+    padding: 0 10px
+}
+
+.navbar a.openbtn,
+.navbar ul a.closebtn {
+    display: none
+}
+
+.navbar ul.nav-item {
+    display: flex;
+    padding: 0
+}
+
+.navbar ul li a {
+    color: #fefefe;
+    margin: 0 20px;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    transition: .3s ease-in-out
+}
+
+.navbar ul li a:hover {
+    color: #fefefe
+}
+
+.row {
+    padding: 30px 77px
+}
+
+.row img {
+    width: 100%
+}
+
+.col-lg-5 {
+    padding: 100px 40px
+}
+
+.row h1 {
+    font-size: 48px;
+    line-height: 61px
+}
+
+.row p {
+    font-size: 18px;
+    line-height: 29px;
+    padding: 30px 0;
+    width: 300px
+}
+
+.row a {
+    color: #fefefe;
+    font-size: 22px
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    background-color: #0b0b0b;
+    left: 60%;
+    top: -150px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .5)
+}
+
+.card img {
+    width: 85px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 30px
+}
+
+.card .card-content {
+    padding: 20px 0
+}
+
+.card p.name-tag {
+    font-size: 14px;
+    font-weight: 500
+}
+
+.card p.job {
+    font-size: 12px;
+    color: #828282
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: 700
+}
+
+footer {
+    justify-content: center;
+    text-align: center
+}
+
+a,
+footer>p {
+    font-size: 14px;
+    color: #a9a9a9
+}
+
+@media screen and (max-width:1280px) {
+    .card {
+        top: -180px
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar {
+        padding: 40px 20px
+    }
+
+    .row {
+        padding: 10px 30px
+    }
+
+    .col-lg-5 {
+        padding: 20px
+    }
+
+    .card {
+        width: 50%;
+        left: 35%;
+        top: -110px
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar a.openbtn,
+    .navbar ul a.closebtn {
+        display: block;
+        font-size: 36px;
+        cursor: pointer
+    }
+
+    .row h1 {
+        font-size: 36px
+    }
+
+    .row a,
+    .row p {
+        font-size: 14px
+    }
+
+    .card {
+        left: 20%;
+        width: 300px
+    }
+
+    .navbar ul.nav-item {
+        flex-direction: column;
+        position: fixed;
+        background-color: #070707;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        overflow-x: hidden;
+        transition: .5s ease-in-out;
+        z-index: 1
+    }
+
+    .navbar ul a.closebtn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 60px
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+        line-height: 60px;
+        transition: .3s ease-in-out
+    }
+}
+
+@media screen and (max-width:400px) {
+    .card {
+        top: -100px;
+        left: 20%;
+        width: 250px
+    }
+
+    .card img {
+        width: 60px;
+        margin-right: 15px
+    }
+
+    .card .card-content {
+        line-height: 5px
+    }
+
+    .card h1 {
+        font-size: 18px
+    }
+}
